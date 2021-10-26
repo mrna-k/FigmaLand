@@ -1,0 +1,67 @@
+@font-face {
+    font-family: "Graphik";
+    src: url(../../fonts/Graphik-Regular.woff);
+}
+
+@font-face {
+    font-family: "Graphik Bold";
+    src: url(../../fonts/Graphik-Bold.woff);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: "Graphik";
+}
+
+h2, h3{
+    margin: 0;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+p{
+    margin: 0;
+}
+
+button{
+    outline: none;
+    padding: 0;
+    border: 1px solid transparent;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.container{
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.button{
+    background: #2091F9;
+    border-radius: 35px;
+    font-size: 20px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    padding: 18px 0;
+    width: 100%;
+
+    &:hover{
+        background: #2473be;
+        transition: 0.4s;
+    }
+}

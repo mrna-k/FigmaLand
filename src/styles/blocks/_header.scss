@@ -1,0 +1,98 @@
+.header{
+    background-image: url('../../img/header/head_bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 40px;
+
+    &__navbar{
+        max-width: 1210px;
+        display: flex;
+        justify-content: space-between;
+        margin: 40px auto;
+        align-items: center;
+    }
+
+    &__nav{
+        max-width: 437px;
+        flex: 1;
+    }
+    
+    &__list{
+        display: inline-block;
+        padding: 10px;
+        margin-right: 21px;
+
+        &:last-child{
+            margin-right: 0;
+        }
+    }   
+
+    &__link{
+        font-size: 15px;
+        letter-spacing: 0.2px;
+        color: #FFFFFF;
+    }
+
+    &__logo{
+        flex: 1;
+        margin-left: 26px;
+
+        &-img{
+            width: 206px;
+            height: 78px;
+        }
+    }
+
+    &__social{
+        max-width: 171px;
+        flex: 1;
+
+        &-list{
+            display: inline-block;
+            margin-right: 24px;
+
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    
+        &-icon{
+            width: 32px;
+            height: 32px;
+        }  
+    }
+
+    &__info{
+        text-align: center;
+        margin: auto;
+        padding-bottom: 358px;
+    }
+
+    &__title{
+        font-family: "Graphik Bold";
+        font-weight: bold;
+        font-size: 74px;
+        line-height: 84px;
+        letter-spacing: 0.2px;
+        color: #FFFFFF;
+        max-width: 692px;
+        margin: 110px auto 0;
+        padding: 10px;
+    }
+
+    &__text{
+        font-size: 28px;
+        line-height: 40px;
+        letter-spacing: 0.2px;
+        color: #FFFFFF;
+        max-width: 766px;
+        margin: 17px auto 90px;
+        padding: 10px;
+    }
+
+    &__button{
+        max-width: 236px;
+        margin: 20px;
+    }
+}
