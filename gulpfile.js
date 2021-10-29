@@ -47,6 +47,10 @@ task ('icons', () => {
     return src(`${SRC_PATH}/img/**`).pipe(dest(`${DIST_PATH}/img`))
 });
 
+task ('fonts', () => {
+    return src(`${SRC_PATH}/fonts/**`).pipe(dest(`${DIST_PATH}/fonts`))
+});
+
 
 task('server', function() {
     browserSync.init({
@@ -60,9 +64,10 @@ task('server', function() {
 task ("watch", () => {
     watch ("./src/styles/**/*.scss", series("styles"));
     watch ("./src/*.html", series("copy:html"));
-    watch ("./src/img/**", series ("icons"))
+    watch ("./src/img/**", series("icons"));
+    watch ("./src/fonts/**", series("fonts") )
 });
 
-task ("default", series("clean", parallel("copy:html", "styles", "icons"), parallel("watch", "server")));
+task ("default", series("clean", parallel("copy:html", "styles", "icons", "fonts"), parallel("watch", "server")));
 
-task ("build", series('clean', parallel('copy:html', 'styles', 'icons')));
+task ("build", series('clean', parallel('copy:html', 'styles', 'icons', 'fonts')));
